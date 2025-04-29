@@ -2,36 +2,91 @@
 <html>
 
 <head>
-  <!-- Basic -->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
 
-  <title>Portfolio - Martran Théo</title>
+  <title>Portfolio</title>
 
-  <!-- slider stylesheet -->
+  <!-- External stylesheets -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-
-  <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-  <!-- fonts awesome style -->
   <link href="css/font-awesome.min.css" rel="stylesheet" />
-  <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
-  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Custom style -->
   <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #0f2027;
+      color: #fff;
+      position: relative;
+    }
+
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      top: 0;
+      left: 0;
+    }
+
+    .about_section {
+      padding: 80px 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .about_section .detail-box a {
+      background-color: #00bcd4;
+      color: white;
+      padding: 10px 50px;
+      border-radius: 25px;
+      display: inline-block;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      margin-top: 15px;
+    }
+
+    .about_section .detail-box a:hover {
+      background-color: #0097a7;
+      transform: scale(1.05);
+    }
+
+    .about_section img {
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .illustration-img {
+      max-width: 100px;
+      margin: 0 auto 20px;
+      display: block;
+    }
+
+    .heading_container h2 {
+      color: #00bcd4;
+    }
+
+    .detail-box {
+      background-color: #1e3a8a;
+      padding: 30px;
+      border-radius: 20px;
+    }
+  </style>
 </head>
 
 <body class="sub_page">
+  <div id="particles-js"></div>
+
   <div class="hero_area">
-    <!-- header section strats -->
     <header class="header_section">
       <nav class="navbar navbar-expand-lg custom_nav-container">
         <div class="custom_menu-btn">
@@ -49,7 +104,7 @@
               <span class="s-3"> </span>
             </button>
           </div>
-          <div class="overlay-content">
+       <div class="overlay-content">
             <a class="active" href="index.html">
               A propos de moi
             </a>
@@ -60,89 +115,86 @@
               Mes projets
             </a> 
 			<a class="" href="experiencespro.html">
-              Mes Experiences  professionnels
+              Mes Experiences professionnels
             </a>
           </div>
         </div>
         <a class="navbar-brand" href="index.html">
-          <span>
-            Portfolio - Martran Théo
-          </span>
+          <span>Portfolio - Théo Martran </span>
         </a>
-        <a href="https://www.linkedin.com/in/theo-martran-69185a25b/" class="call_btn">
-          Contactez-moi
-        </a>
+        <a href="https://www.linkedin.com/in/theo-martran-69185a25b/" class="call_btn">Contactez-moi</a>
       </nav>
     </header>
-    <!-- end header section -->
   </div>
 
- <!-- about section -->
-<!-- about section -->
-<section class="about_section mt-4">
-
-<section class="about_section ">
-  <div class="container">
-    <div class="row align-items-start">
-      <div class="img-box col-lg-6 col-md-12 text-center">
-        <img src="images/about-img.jpg" alt="Photo Théo Martran" style="width: auto; max-width: 100%; height: auto;" />
-      </div>
-      <div class="detail-box detail_box_common col-lg-6 col-md-12 mt-4 mt-lg-0">
-        <div class="heading_container heading_center">
-          <h2>
-            À propos de moi
-          </h2>
+  <section class="about_section">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="img-box col-lg-6 col-md-7" data-aos="zoom-in">
+          <img src="images/about-img.jpg" alt="Théo Martran" class="img-fluid" />
         </div>
-        <p>
-          Je m'appelle Théo Martran, Je suis  étudiant en troisième année de BUT Réseaux et Télécommunications. L'année dernière, j'ai réalisé un stage au sein du RSSI du CHU au Poitiers, où j'étais chargé d'une mission essentielle : l'analyse et la gestion des logs pour améliorer la cybersécurité de l'établissement.
-        </p>
-        <p>
-          Le principal défi auquel j'ai été confronté était l'utilisation d'une version obsolète de la stack ELK (Elasticsearch, Logstash, Kibana), ce qui compliquait l'analyse efficace des logs. Le serveur Rsyslog nécessitait également une mise à jour.
-        </p>
-        <p>
-          Pour résoudre ce problème, j'ai déployé la dernière version de la stack ELK sur une nouvelle machine, importé les anciennes visualisations et créé environ 300 nouveaux dashboards avancés. Ces derniers ont permis une meilleure surveillance, notamment des sites illégaux détectés par le pare-feu Stormshield.
-        </p>
-        <p>
-          J'ai aussi participé au CTF Medialeak (120ᵉ/400), renforçant mes compétences en OSINT. J’ai également conçu un exercice de crise conforme aux directives de l'ANSSI.
-        </p>
-        <p>
-          Résultat : une détection d’anomalies plus efficace, une meilleure vue d’ensemble, et un enrichissement significatif de mes compétences techniques et pratiques.
-        </p>
+        <div class="detail-box col-lg-6 col-md-5 text_center" data-aos="fade-left">
+          <div class="heading_container heading_center">
+            <img src="https://cdn-icons-png.flaticon.com/512/3208/3208719.png" alt="illustration" class="illustration-img animate__animated animate__fadeInDown" />
+            <h2 class="animate__animated animate__fadeInDown">À propos de moi</h2>
+          </div>
+
+          <div data-aos="fade-up">
+            <h3>Présentation</h3>
+            <p>Je m'appelle Théo Martran, étudiant en troisième année de BUT Réseaux et Télécommunications.</p>
+          </div>
+
+          <div data-aos="fade-up">
+            <h3>Stage au CHU de Poitiers</h3>
+            <p>L'année dernière, j'ai réalisé un stage au sein du RSSI du CHU de Poitiers. Ma mission principale était l'analyse et la gestion des logs pour renforcer la cybersécurité de l'établissement.</p>
+          </div>
+
+          <div data-aos="fade-up">
+            <h3>Défis rencontrés</h3>
+            <p>Le principal défi concernait l'utilisation d'une stack ELK obsolète (Elasticsearch, Logstash, Kibana), compliquant l'analyse des logs. Le serveur Rsyslog était également dépassé.</p>
+          </div>
+
+          <div data-aos="fade-up">
+            <h3>Solutions apportées</h3>
+            <p>J’ai déployé une nouvelle version de la stack ELK, transféré les anciennes visualisations et créé près de 300 dashboards avancés. Ceux-ci ont permis une surveillance accrue, notamment des sites malveillants bloqués par le pare-feu Stormshield.</p>
+          </div>
+
+          <div data-aos="fade-up">
+            <h3>Autres réalisations</h3>
+            <p>J’ai participé au CTF Medialeak (120ᵉ/400), développé mes compétences en OSINT, et conçu un exercice de crise aligné avec les recommandations de l’ANSSI.</p>
+          </div>
+
+          <div data-aos="fade-up">
+            <h3>Résultats</h3>
+            <p>Grâce à ces actions, la détection des anomalies a été optimisée, la visibilité sur le réseau améliorée et mes compétences techniques renforcées.</p>
+          </div>
+
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- end about section -->
-
-
-
-
- 
-  <!-- footer section -->
   <footer class="footer_section">
     <div class="container-fluid">
       <div class="row">
         <div class="col-xl-6">
-          <p>
-            &copy; <span id="displayYear"></span> 
-            <a href="https://html.design/"></a>
-          </p>
-      
+          <p></p>
+        </div>
       </div>
     </div>
   </footer>
-  <!-- footer section -->
 
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="js/custom.js"></script>
-  <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    particlesJS.load('particles-js', 'https://raw.githubusercontent.com/VincentGarreau/particles.js/master/demo/particles.json');
   </script>
-  <!-- End Google Map -->
-
+</body>
 
 </html>
