@@ -27,11 +27,27 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+
+  <!-- Custom style for title alignment -->
+  <style>
+    .experience-title {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      text-align: left;
+    }
+
+    .text-muted {
+      color: #6c757d;
+      font-weight: normal;
+      font-size: 0.95rem;
+    }
+  </style>
 </head>
 
 <body class="sub_page">
   <div class="hero_area">
-    <!-- header section strats -->
+    <!-- header section starts -->
     <header class="header_section">
       <nav class="navbar navbar-expand-lg custom_nav-container">
         <div class="custom_menu-btn">
@@ -50,108 +66,92 @@
             </button>
           </div>
           <div class="overlay-content">
-            <a class="active" href="index.html">
-              A propos de moi
-            </a>
-            <a class="" href="competences.html">
-              Mes compétences
-            </a>
-            <a class="" href="projets.html">
-              Mes projets
-            </a> 
-			<a class="" href="experiencespro.html">
-              Mes Experiences professionnels
-            </a>
+            <a class="active" href="index.html">A propos de moi</a>
+            <a class="" href="competences.html">Mes compétences</a>
+            <a class="" href="projets.html">Mes projets</a>
+            <a class="" href="experiencespro.html">Mes Experiences professionnelles</a>
           </div>
         </div>
         <a class="navbar-brand" href="index.html">
-          <span>
-            Portfolio - Martran Théo
-          </span>
+          <span>Portfolio - Martran Théo</span>
         </a>
-        <a href="" class="call_btn">
-          Contactez-moi
-        </a>
+        <a href="" class="call_btn">Contactez-moi</a>
       </nav>
     </header>
     <!-- end header section -->
   </div>
-<!-- Expériences professionnelles section -->
-<section class="about_section">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="detail-box detail_box_common col-lg-10 col-md-12">
-        <div class="heading_container heading_center">
-          <h2>
-            💼 Mes Expériences Professionnelles
-          </h2>
+
+  <!-- Expériences professionnelles section -->
+  <section class="about_section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="detail-box detail_box_common col-lg-10 col-md-12">
+          <div class="heading_container heading_center">
+            <h2>💼 Mes Expériences Professionnelles</h2>
+          </div>
+
+          <!-- Première expérience -->
+          <div class="experience">
+            <h4 class="experience-title">
+              Stage de 4 mois – Crédit Agricole Filiale Cyber conseil & Assistance
+              <span class="text-muted">(février 2025 - en cours)</span>
+            </h4>
+            <p>Durant ce stage, mes missions sont les suivantes :</p>
+            <ul>
+              <li>Réalisation et animation de plusieurs exercices de crise, pour des clients externes.</li>
+              <li>Réalisation d’Audit de sécurité.</li>
+              <li>Sensibilisation à la cybersécurité et mise en exercices de phishing.</li>
+            </ul>
+          </div>
+
+          <!-- Séparation -->
+          <hr>
+
+          <!-- Deuxième expérience -->
+          <div class="experience">
+            <h4 class="experience-title">
+              Stage – Service DSI RSSI, CHU de Poitiers
+              <span class="text-muted">(4,5 mois répartis sur 2023-2024)</span>
+            </h4>
+            <p>Durant ce stage, j'ai réalisé les missions suivantes :</p>
+            <ul>
+              <li>Réalisation de la cartographie complète du réseau informatique via Forescout (2023).</li>
+              <li>Ajout de groupes de découvertes dans l'outil de gestion des vulnérabilités Cyberwatch (2023).</li>
+              <li>Cartographie de l'Active Directory, permettant une meilleure gestion des accès et des ressources (2023).</li>
+              <li>Traitement et analyse des logs, pour la détection et la prévention d’incidents de sécurité (2024).</li>
+              <li>Élaboration et coordination d’un exercice de crise en cybersécurité (2024).</li>
+              <li>Participation au CTF Medileak (ONSIT), simulation d'une fuite de données dans un contexte médical (2024).</li>
+            </ul>
+          </div>
+
         </div>
-
-        <!-- Première expérience -->
-        <div class="experience">
-          <h4><strong>Stage de 4 mois – Crédit Agricole Filiale Cyber conseil & Assistance</strong> (février 2025 - en cours)</h4>
-          <p>Durant ce stage, mes missions sont les suivantes :</p>
-          <ul>
-            <li>Réalisation et animation de plusieurs exercices de crise, pour des clients externes.</li>
-            <li>Réalisation d’Audit de sécurité.</li>
-            <li>Sensibilisation à la cybersécurité et mise en exercices de phishing.</li>
-          </ul>
-        </div>
-
-        <!-- Séparation -->
-        <hr>
-
-        <!-- Deuxième expérience -->
-        <div class="experience">
-          <h4><strong>Stage – Service DSI RSSI, CHU de Poitiers</strong> (4,5 mois répartis sur 2023-2024)</h4>
-          <p>Durant ce stage, j'ai réalisé les missions suivantes :</p>
-          <ul>
-            <li>Réalisation de la cartographie complète du réseau informatique via Forescout (2023).</li>
-            <li>Ajout de groupes de découvertes dans l'outil de gestion des vulnérabilités Cyberwatch (2023).</li>
-            <li>Cartographie de l'Active Directory, permettant une meilleure gestion des accès et des ressources (2023).</li>
-            <li>Traitement et analyse des logs, pour la détection et la prévention d’incidents de sécurité (2024).</li>
-            <li>Élaboration et coordination d’un exercice de crise en cybersécurité (2024).</li>
-            <li>Participation au CTF Medileak (ONSIT), simulation d'une fuite de données dans un contexte médical (2024).</li>
-          </ul>
-        </div>
-
       </div>
     </div>
-  </div>
-</section>
-<!-- end Expériences professionnelles section -->
+  </section>
+  <!-- end Expériences professionnelles section -->
 
-
-
-
-
-
- 
   <!-- footer section -->
   <footer class="footer_section">
     <div class="container-fluid">
       <div class="row">
         <div class="col-xl-6">
           <p>
-            &copy; <span id="displayYear"></span> 
+            &copy; <span id="displayYear"></span>
             <a href="https://html.design/"></a>
           </p>
-      
+        </div>
       </div>
     </div>
   </footer>
-  <!-- footer section -->
+  <!-- end footer section -->
 
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="js/custom.js"></script>
   <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
-  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
   <!-- End Google Map -->
-
 </body>
 
 </html>
