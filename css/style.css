@@ -284,3 +284,6 @@ a:focus {
 }
 
 /* Continue this approach for the rest of the CSS… */
+.about_section {
+  margin-top: 40px; /* Ajuste la valeur selon l'espacement désiré */
+}
